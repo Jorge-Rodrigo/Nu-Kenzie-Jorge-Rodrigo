@@ -1,0 +1,136 @@
+
+.main-btn-div{
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+    margin-top: 45px;
+}
+.main-btn-div h2{
+    font-weight: 900;
+    font-size: 22px;
+} 
+
+.main-btn-div .btn-all{
+    background-color: #fd377e;
+    color: #ffffffff;
+    border: 2px solid #fd377e ; 
+    transition: .5s ease-in;
+}
+
+.main-btn-div .btn-all:hover{
+    background-color: #fc508f;
+    color: #ffffffff;
+}
+
+.main-btn-div button{
+    width: 102px;
+    height: 40px;
+    background-color: #E9ECEF;
+    color: #343A40;
+    border: 2px solid #E9ECEF ;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    transition: .5s ease-in;
+}
+
+.main-btn-div button:hover{
+    background-color: #e9ecef33;
+    color: #343a40;
+}
+
+
+.list-title{
+   font-weight: 900;
+   margin-top: 35px;
+   margin-bottom: 20px;
+}
+
+.list{
+    list-style: none;
+    width: 100%;
+}
+
+.list li{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.loading-base{
+    width: 100%;
+    height: 110px;
+    background-color:   #F8F9FA;
+    padding: 12px;
+    border-left: 8px solid #E9ECEF;
+    border-radius: 4px;
+}
+
+.loading-top{
+    width: 70%;
+    height: 30px;
+    background-color: #E9ECEF;
+    margin-bottom: 15px;
+}
+
+.loading-bottom{
+    width: 40%;
+    height: 25px;
+    background-color: #E9ECEF
+}
+
+
+.skeleton-loading{
+     animation: loading 1s linear infinite alternate;
+}
+
+@keyframes loading{
+    0%{
+        background-color: hsl(200,20%,70%);
+    }
+    100%{
+        background-color: hsl(200,20%,95%);
+    }
+}
+
+.main-div-list{
+    padding-right: 55px;
+}
+
+@media(max-width: 1200px){
+    .main-div-list{
+        width: 80%;
+        margin-right: 105px;
+    }
+    .main-btn-div{
+        justify-content: space-evenly;
+        gap: 0;
+    }
+    
+}
+
+
+@media(max-width: 900px){
+ 
+    .main-btn-div h2{
+        padding-left: 40px;
+    }
+    .list-title{
+       padding-left: 40px;
+    }
+    .list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .loading-base{
+        min-width: 60%;
+    }
+    .main-btn-div button{
+        width: 102px;
+    }
+}
